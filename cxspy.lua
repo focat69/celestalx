@@ -304,7 +304,7 @@ local function LLCCB_fake_script() -- Home.PlayOpen
 	
 	repeat wait() until script.Parent
 	script.Parent.Visible = true
-	script.open:Play()
+	--script.open:Play()
 	
 	local main = script.Parent
 	
