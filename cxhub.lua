@@ -376,7 +376,7 @@ local function HSQYKN_fake_script() -- close.LocalScript
 		})
 	end
 	notify("Join our Discord! - CXHub", "https://discord.gg/X3fZ9WK43k")
-	
+	game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("CXHub on top!!1", "All")
 	script.Parent.MouseButton1Click:Connect(function()
 		notify("CXHub", "Destroyed the Hub.")
 		script.Parent.Parent:Destroy() -- destroys the hub 
