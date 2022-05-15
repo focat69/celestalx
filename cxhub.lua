@@ -826,7 +826,7 @@ local function OHPKU_fake_script() -- status.LocalScript
 			end
 		end
 	end
-	
+
 	local sg = {
 		286090429, -- Arsenal
 		155615604, -- Prison Life
@@ -834,18 +834,18 @@ local function OHPKU_fake_script() -- status.LocalScript
 	}
 	local pid = game.PlaceId
 	local status = script.Parent
-	
-		--[[function checkGame()
-			if not indexOf(sg, 286090429) == nil then
-				return true
-			elseif not indexOf(sg, 155615604) == nil then
-				return true
-			elseif not indexOf(sg, 1962086868) == nil then
-				return true
-			else
-				return false
-			end
-		end]]--
+
+	--[[function checkGame()
+		if not indexOf(sg, 286090429) == nil then
+			return true
+		elseif not indexOf(sg, 155615604) == nil then
+			return true
+		elseif not indexOf(sg, 1962086868) == nil then
+			return true
+		else
+			return false
+		end
+	end]]--
 	if contains(sg, pid) then
 		--local g = checkGame()
 		--if g then
@@ -856,6 +856,9 @@ local function OHPKU_fake_script() -- status.LocalScript
 		script.Parent.Parent.Visible = false
 		script.Parent.Parent.Parent.Main.Visible = true
 		--end
+	else
+		status.Text = "Game is not compatible. (unless using sword fight, cxspy and chatbot)"
+		script.Parent.Parent.continuetohub.Visible = true
 	end
 end
 coroutine.wrap(OHPKU_fake_script)()
