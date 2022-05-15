@@ -3,5 +3,9 @@ Roblox lua scripts + possible executor in near future???????
   
   
 ## Some scripts we offer  
-As of now, Prison life for admin commands  
-and any other game for spy. (Spy includes prison life if wanted)
+We have a hub, with 6 scripts!  
+More coming as the hub develops.  
+  
+  
+### TIP
+Do not use 'cxspy.lua'. It is deprecated and 'cxhub.lua' should be used instead.
