@@ -75,7 +75,7 @@ cxhub.DisplayOrder = 999
 
 Main.Name = "Main"
 Main.Parent = cxhub
-Main.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Main.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 Main.Position = UDim2.new(0.406605929, -201, 0.412974685, -132)
 Main.Size = UDim2.new(0, 638, 0, 374)
 Main.Visible = false
@@ -535,7 +535,7 @@ loading.TextWrapped = true
 
 -- Scripts:
 
-local function RHQOD_fake_script() -- Main.Dragify 
+local function XQMK_fake_script() -- Main.Dragify 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -589,8 +589,8 @@ local function RHQOD_fake_script() -- Main.Dragify
 	end
 	notify("CXHub", "Loaded! Enjoy. By @focat on rblx")
 end
-coroutine.wrap(RHQOD_fake_script)()
-local function BDGU_fake_script() -- close.LocalScript 
+coroutine.wrap(XQMK_fake_script)()
+local function EWCBKPH_fake_script() -- close.LocalScript 
 	local script = Instance.new('LocalScript', close)
 
 	local sg = game:GetService("StarterGui")
@@ -607,8 +607,8 @@ local function BDGU_fake_script() -- close.LocalScript
 		script.Parent.Parent:Destroy() -- destroys the hub 
 	end)
 end
-coroutine.wrap(BDGU_fake_script)()
-local function DUHPNTM_fake_script() -- chatbot.LocalScript 
+coroutine.wrap(EWCBKPH_fake_script)()
+local function BFKK_fake_script() -- chatbot.LocalScript 
 	local script = Instance.new('LocalScript', chatbot)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -634,8 +634,8 @@ local function DUHPNTM_fake_script() -- chatbot.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(DUHPNTM_fake_script)()
-local function LZFSV_fake_script() -- pladmin.LocalScript 
+coroutine.wrap(BFKK_fake_script)()
+local function OADMDN_fake_script() -- pladmin.LocalScript 
 	local script = Instance.new('LocalScript', pladmin)
 
 	local sg = game:GetService("StarterGui")
@@ -652,8 +652,8 @@ local function LZFSV_fake_script() -- pladmin.LocalScript
 		notify("CXHub", "Prison Life Admin was loaded!")
 	end)
 end
-coroutine.wrap(LZFSV_fake_script)()
-local function NKQEBFZ_fake_script() -- cxspy.LocalScript 
+coroutine.wrap(OADMDN_fake_script)()
+local function ZAGSMAL_fake_script() -- cxspy.LocalScript 
 	local script = Instance.new('LocalScript', cxspy)
 
 	local sg = game:GetService("StarterGui")
@@ -670,8 +670,8 @@ local function NKQEBFZ_fake_script() -- cxspy.LocalScript
 		notify("CXHub", "CXSpy was loaded!")
 	end)
 end
-coroutine.wrap(NKQEBFZ_fake_script)()
-local function BFBSEN_fake_script() -- arsenal.LocalScript 
+coroutine.wrap(ZAGSMAL_fake_script)()
+local function LSSR_fake_script() -- arsenal.LocalScript 
 	local script = Instance.new('LocalScript', arsenal)
 
 	local sg = game:GetService("StarterGui")
@@ -688,16 +688,16 @@ local function BFBSEN_fake_script() -- arsenal.LocalScript
 		notify("CXHub", "Darkhub Arsenal was loaded.")
 	end)
 end
-coroutine.wrap(BFBSEN_fake_script)()
-local function TTJDFN_fake_script() -- walkspeedbtn.LocalScript 
+coroutine.wrap(LSSR_fake_script)()
+local function NOPAG_fake_script() -- walkspeedbtn.LocalScript 
 	local script = Instance.new('LocalScript', walkspeedbtn)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(script.Parent.Parent.walkspeed.Text)
 	end)
 end
-coroutine.wrap(TTJDFN_fake_script)()
-local function VORMOA_fake_script() -- toh.LocalScript 
+coroutine.wrap(NOPAG_fake_script)()
+local function NUUHRS_fake_script() -- toh.LocalScript 
 	local script = Instance.new('LocalScript', toh)
 
 	local sg = game:GetService("StarterGui")
@@ -714,8 +714,8 @@ local function VORMOA_fake_script() -- toh.LocalScript
 		notify("CXHub", "Tower of Hell GUI was loaded.")
 	end)
 end
-coroutine.wrap(VORMOA_fake_script)()
-local function RKYKDR_fake_script() -- sfreach.LocalScript 
+coroutine.wrap(NUUHRS_fake_script)()
+local function KNYEZ_fake_script() -- sfreach.LocalScript 
 	local script = Instance.new('LocalScript', sfreach)
 
 	local sg = game:GetService("StarterGui")
@@ -732,8 +732,8 @@ local function RKYKDR_fake_script() -- sfreach.LocalScript
 		notify("CXHub", "Sword fight reach was loaded.")
 	end)
 end
-coroutine.wrap(RKYKDR_fake_script)()
-local function GEZARL_fake_script() -- Loader.Dragify 
+coroutine.wrap(KNYEZ_fake_script)()
+local function PNKAFMJ_fake_script() -- Loader.Dragify 
 	local script = Instance.new('LocalScript', Loader)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -787,8 +787,8 @@ local function GEZARL_fake_script() -- Loader.Dragify
 	end
 	notify("CXHub", "Loaded! Enjoy. By @focat on rblx")
 end
-coroutine.wrap(GEZARL_fake_script)()
-local function KFUK_fake_script() -- close_2.LocalScript 
+coroutine.wrap(PNKAFMJ_fake_script)()
+local function IHES_fake_script() -- close_2.LocalScript 
 	local script = Instance.new('LocalScript', close_2)
 
 	local sg = game:GetService("StarterGui")
@@ -807,8 +807,8 @@ local function KFUK_fake_script() -- close_2.LocalScript
 		script.Parent.Parent:Destroy() -- destroys the hub 
 	end)
 end
-coroutine.wrap(KFUK_fake_script)()
-local function OHPKU_fake_script() -- status.LocalScript 
+coroutine.wrap(IHES_fake_script)()
+local function TDCXVIB_fake_script() -- status.LocalScript 
 	local script = Instance.new('LocalScript', status)
 
 	local function contains(list, x)
@@ -826,7 +826,7 @@ local function OHPKU_fake_script() -- status.LocalScript
 			end
 		end
 	end
-
+	
 	local sg = {
 		286090429, -- Arsenal
 		155615604, -- Prison Life
@@ -834,18 +834,18 @@ local function OHPKU_fake_script() -- status.LocalScript
 	}
 	local pid = game.PlaceId
 	local status = script.Parent
-
-	--[[function checkGame()
-		if not indexOf(sg, 286090429) == nil then
-			return true
-		elseif not indexOf(sg, 155615604) == nil then
-			return true
-		elseif not indexOf(sg, 1962086868) == nil then
-			return true
-		else
-			return false
-		end
-	end]]--
+	
+		--[[function checkGame()
+			if not indexOf(sg, 286090429) == nil then
+				return true
+			elseif not indexOf(sg, 155615604) == nil then
+				return true
+			elseif not indexOf(sg, 1962086868) == nil then
+				return true
+			else
+				return false
+			end
+		end]]--
 	if contains(sg, pid) then
 		--local g = checkGame()
 		--if g then
@@ -857,12 +857,13 @@ local function OHPKU_fake_script() -- status.LocalScript
 		script.Parent.Parent.Parent.Main.Visible = true
 		--end
 	else
+		wait(1.4)
 		status.Text = "Game is not compatible. (unless using sword fight, cxspy and chatbot)"
 		script.Parent.Parent.continuetohub.Visible = true
 	end
 end
-coroutine.wrap(OHPKU_fake_script)()
-local function TZTJ_fake_script() -- continuetohub.LocalScript 
+coroutine.wrap(TDCXVIB_fake_script)()
+local function RIVO_fake_script() -- continuetohub.LocalScript 
 	local script = Instance.new('LocalScript', continuetohub)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -870,10 +871,10 @@ local function TZTJ_fake_script() -- continuetohub.LocalScript
 		script.Parent.Parent.Parent.Main.Visible = true
 	end)
 end
-coroutine.wrap(TZTJ_fake_script)()
-local function HBZG_fake_script() -- loading.LocalScript 
+coroutine.wrap(RIVO_fake_script)()
+local function JBTBGOS_fake_script() -- loading.LocalScript 
 	local script = Instance.new('LocalScript', loading)
 
 	
 end
-coroutine.wrap(HBZG_fake_script)()
+coroutine.wrap(JBTBGOS_fake_script)()
