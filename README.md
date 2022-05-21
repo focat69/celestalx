@@ -1,7 +1,9 @@
 # CelestalX
 Roblox lua scripts + possible executor in near future???????  
   
-Update: Removed *prison life* from CXSpy cause it's pretty much useless and doesn't fit with the actual function of CXSpy, to, well, spy.
+Latest Update:  
+Added a new Arsenal hub that has no key! (dark hub now uses keys inside of git scripts)  
+Removed *prison life* from CXSpy cause it's pretty much useless and doesn't fit with the actual function of CXSpy, to, well, spy.
   
   
 ## Some scripts we offer  
