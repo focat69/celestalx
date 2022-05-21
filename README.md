@@ -1,6 +1,8 @@
 # CelestalX
 Roblox lua scripts + possible executor in near future???????  
   
+Update: Removed *prison life* from CXSpy cause it's pretty much useless.
+  
   
 ## Some scripts we offer  
 We have a hub, with 6 scripts!  
