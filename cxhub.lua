@@ -8,7 +8,7 @@ $$ |  $$\ $$  /\$$\       $$ |  $$ |$$ |  $$ |$$ |  $$ |
 \$$$$$$  |$$ /  $$ |      $$ |  $$ |\$$$$$$  |$$$$$$$  |
  \______/ \__|  \__|      \__|  \__| \______/ \_______/ 
 v3                                                        
-by @focat on rblx                              
+by @focat on rblx                             
 
 ]]--
 
@@ -803,6 +803,7 @@ local function CQJD_fake_script() -- Loader.LocalScript
 		script.Parent:Destroy()
 	else
 		getgenv().newls = true
+		getgenv().loaded = true
 		local function contains(list, x)
 			for _, v in pairs(list) do
 				if v == x then return true end
