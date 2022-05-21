@@ -793,7 +793,7 @@ local function CQJD_fake_script() -- Loader.LocalScript
 	local script = Instance.new('LocalScript', Loader)
 
 	local function notify(title, text)
-		game:GetService("StarterGui").SetCore("SendNotification", {
+		game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = title;
 			Text = text
 		})
