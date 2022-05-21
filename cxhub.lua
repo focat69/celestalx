@@ -76,6 +76,7 @@ Main.Parent = cxhub
 Main.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 Main.Position = UDim2.new(0.5, -192, 0.5, -144)
 Main.Size = UDim2.new(0, 385, 0, 289)
+Main.Visible = false
 
 UICorner.Parent = Main
 
@@ -137,7 +138,7 @@ arsenal.Position = UDim2.new(0.0790331066, 0, 0.152840883, 0)
 arsenal.Size = UDim2.new(0, 147, 0, 37)
 arsenal.ZIndex = 2
 arsenal.Font = Enum.Font.SourceSans
-arsenal.Text = "Arsenal Dark Hub"
+arsenal.Text = "Arsenal DexHub (no key)"
 arsenal.TextColor3 = Color3.fromRGB(255, 255, 255)
 arsenal.TextScaled = true
 arsenal.TextSize = 14.000
@@ -519,7 +520,6 @@ Loader.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
 Loader.BackgroundTransparency = 1.000
 Loader.Position = UDim2.new(0.5, -201, 0.5, -132)
 Loader.Size = UDim2.new(0, 403, 0, 264)
-Loader.Visible = false
 
 CX_Text_2.Name = "CX_Text"
 CX_Text_2.Parent = Loader
@@ -552,7 +552,7 @@ UICorner_11.Parent = TextLabel_2
 
 -- Scripts:
 
-local function ESXERWG_fake_script() -- arsenal.LocalScript 
+local function TONCM_fake_script() -- arsenal.LocalScript 
 	local script = Instance.new('LocalScript', arsenal)
 
 	local sg = game:GetService("StarterGui")
@@ -565,12 +565,12 @@ local function ESXERWG_fake_script() -- arsenal.LocalScript
 	end
 	
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Arsenal"))()
-		notify("CXHub", "Darkhub Arsenal was loaded.")
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/HonestlyDex/DexHub/main/Init"))()
+		notify("CXHub", "DexHub Arsenal was loaded. (NO KEY!)")
 	end)
 end
-coroutine.wrap(ESXERWG_fake_script)()
-local function VJWLA_fake_script() -- toh.LocalScript 
+coroutine.wrap(TONCM_fake_script)()
+local function BGTRWJ_fake_script() -- toh.LocalScript 
 	local script = Instance.new('LocalScript', toh)
 
 	local sg = game:GetService("StarterGui")
@@ -587,8 +587,8 @@ local function VJWLA_fake_script() -- toh.LocalScript
 		notify("CXHub", "Tower of Hell GUI was loaded.")
 	end)
 end
-coroutine.wrap(VJWLA_fake_script)()
-local function AWQKK_fake_script() -- pladmin.LocalScript 
+coroutine.wrap(BGTRWJ_fake_script)()
+local function HLGB_fake_script() -- pladmin.LocalScript 
 	local script = Instance.new('LocalScript', pladmin)
 
 	local sg = game:GetService("StarterGui")
@@ -605,8 +605,8 @@ local function AWQKK_fake_script() -- pladmin.LocalScript
 		notify("CXHub", "Prison Life Admin was loaded!")
 	end)
 end
-coroutine.wrap(AWQKK_fake_script)()
-local function IPDT_fake_script() -- Main.Dragify 
+coroutine.wrap(HLGB_fake_script)()
+local function DECNF_fake_script() -- Main.Dragify 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -659,9 +659,10 @@ local function IPDT_fake_script() -- Main.Dragify
 		})
 	end
 	notify("CXHub", "Loaded! Enjoy. By @focat on rblx")
+	notify("Join our Discord! - CXHub", "https://discord.gg/X3fZ9WK43k")
 end
-coroutine.wrap(IPDT_fake_script)()
-local function FNAWLM_fake_script() -- close.LocalScript 
+coroutine.wrap(DECNF_fake_script)()
+local function HVGGHWD_fake_script() -- close.LocalScript 
 	local script = Instance.new('LocalScript', close)
 
 	local sg = game:GetService("StarterGui")
@@ -678,8 +679,8 @@ local function FNAWLM_fake_script() -- close.LocalScript
 		script.Parent.Parent:Destroy() -- destroys the hub 
 	end)
 end
-coroutine.wrap(FNAWLM_fake_script)()
-local function EONSNK_fake_script() -- universal.LocalScript 
+coroutine.wrap(HVGGHWD_fake_script)()
+local function UGSP_fake_script() -- universal.LocalScript 
 	local script = Instance.new('LocalScript', universal)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -688,8 +689,8 @@ local function EONSNK_fake_script() -- universal.LocalScript
 		script.Parent.Parent.humanoid.Visible = false
 	end)
 end
-coroutine.wrap(EONSNK_fake_script)()
-local function RHATW_fake_script() -- humanoid.LocalScript 
+coroutine.wrap(UGSP_fake_script)()
+local function JUVIC_fake_script() -- humanoid.LocalScript 
 	local script = Instance.new('LocalScript', humanoid)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -698,8 +699,8 @@ local function RHATW_fake_script() -- humanoid.LocalScript
 		script.Parent.Parent.humanoid.Visible = true
 	end)
 end
-coroutine.wrap(RHATW_fake_script)()
-local function RYBB_fake_script() -- chatbot.LocalScript 
+coroutine.wrap(JUVIC_fake_script)()
+local function QTWIUHT_fake_script() -- chatbot.LocalScript 
 	local script = Instance.new('LocalScript', chatbot)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -725,8 +726,8 @@ local function RYBB_fake_script() -- chatbot.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(RYBB_fake_script)()
-local function ZTISQ_fake_script() -- sfreach.LocalScript 
+coroutine.wrap(QTWIUHT_fake_script)()
+local function CFBBDD_fake_script() -- sfreach.LocalScript 
 	local script = Instance.new('LocalScript', sfreach)
 
 	local sg = game:GetService("StarterGui")
@@ -743,8 +744,8 @@ local function ZTISQ_fake_script() -- sfreach.LocalScript
 		notify("CXHub", "Sword fight reach was loaded.")
 	end)
 end
-coroutine.wrap(ZTISQ_fake_script)()
-local function EHJTMX_fake_script() -- cxspy.LocalScript 
+coroutine.wrap(CFBBDD_fake_script)()
+local function OKDWS_fake_script() -- cxspy.LocalScript 
 	local script = Instance.new('LocalScript', cxspy)
 
 	local sg = game:GetService("StarterGui")
@@ -761,8 +762,8 @@ local function EHJTMX_fake_script() -- cxspy.LocalScript
 		notify("CXHub", "CXSpy was loaded!")
 	end)
 end
-coroutine.wrap(EHJTMX_fake_script)()
-local function YGLOMMS_fake_script() -- supported_2.LocalScript 
+coroutine.wrap(OKDWS_fake_script)()
+local function PPORLD_fake_script() -- supported_2.LocalScript 
 	local script = Instance.new('LocalScript', supported_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -771,24 +772,24 @@ local function YGLOMMS_fake_script() -- supported_2.LocalScript
 		script.Parent.Parent.humanoid.Visible = false
 	end)
 end
-coroutine.wrap(YGLOMMS_fake_script)()
-local function MBVGEN_fake_script() -- walkspeedbtn.LocalScript 
+coroutine.wrap(PPORLD_fake_script)()
+local function KECVC_fake_script() -- walkspeedbtn.LocalScript 
 	local script = Instance.new('LocalScript', walkspeedbtn)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(script.Parent.Parent.walkspeed.Text)
 	end)
 end
-coroutine.wrap(MBVGEN_fake_script)()
-local function COMQ_fake_script() -- jpbtn.LocalScript 
+coroutine.wrap(KECVC_fake_script)()
+local function IBXHL_fake_script() -- jpbtn.LocalScript 
 	local script = Instance.new('LocalScript', jpbtn)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = tonumber(script.Parent.Parent.jp.Text)
 	end)
 end
-coroutine.wrap(COMQ_fake_script)()
-local function GZZYBF_fake_script() -- Loader.LocalScript 
+coroutine.wrap(IBXHL_fake_script)()
+local function CQJD_fake_script() -- Loader.LocalScript 
 	local script = Instance.new('LocalScript', Loader)
 
 	local function notify(title, text)
@@ -861,4 +862,4 @@ local function GZZYBF_fake_script() -- Loader.LocalScript
 		end
 	end
 end
-coroutine.wrap(GZZYBF_fake_script)()
+coroutine.wrap(CQJD_fake_script)()
