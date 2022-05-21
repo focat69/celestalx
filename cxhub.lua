@@ -1,4 +1,5 @@
 --[[
+
  $$$$$$\  $$\   $$\       $$\   $$\           $$\       
 $$  __$$\ $$ |  $$ |      $$ |  $$ |          $$ |      
 $$ /  \__|\$$\ $$  |      $$ |  $$ |$$\   $$\ $$$$$$$\  
@@ -7,8 +8,8 @@ $$ |       $$  $$<        $$  __$$ |$$ |  $$ |$$ |  $$ |
 $$ |  $$\ $$  /\$$\       $$ |  $$ |$$ |  $$ |$$ |  $$ |
 \$$$$$$  |$$ /  $$ |      $$ |  $$ |\$$$$$$  |$$$$$$$  |
  \______/ \__|  \__|      \__|  \__| \______/ \_______/ 
-v3                                                        
-by @focat on rblx                             
+v3                                                       
+by @focat on rblx                                                        
 
 ]]--
 
@@ -21,7 +22,7 @@ local UICorner_2 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
 local UICorner_3 = Instance.new("UICorner")
 local Hub_Text = Instance.new("TextLabel")
-local supported = Instance.new("Frame")
+local supportedtab = Instance.new("Frame")
 local arsenal = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local toh = Instance.new("TextButton")
@@ -35,7 +36,7 @@ local close = Instance.new("TextButton")
 local universal = Instance.new("TextButton")
 local credits = Instance.new("TextLabel")
 local humanoid = Instance.new("TextButton")
-local universal_2 = Instance.new("Frame")
+local universaltab = Instance.new("Frame")
 local chatbot = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local sfreach = Instance.new("TextButton")
@@ -48,8 +49,8 @@ local shadowHolder = Instance.new("Frame")
 local umbraShadow = Instance.new("ImageLabel")
 local penumbraShadow = Instance.new("ImageLabel")
 local ambientShadow = Instance.new("ImageLabel")
-local supported_2 = Instance.new("TextButton")
-local humanoid_2 = Instance.new("Frame")
+local supported = Instance.new("TextButton")
+local humanoidtab = Instance.new("Frame")
 local warning = Instance.new("ImageButton")
 local walkspeedbtn = Instance.new("TextButton")
 local walkspeed = Instance.new("TextBox")
@@ -123,15 +124,15 @@ Hub_Text.TextScaled = true
 Hub_Text.TextSize = 14.000
 Hub_Text.TextWrapped = true
 
-supported.Name = "supported"
-supported.Parent = Main
-supported.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-supported.BackgroundTransparency = 1.000
-supported.Position = UDim2.new(0, 0, 0.300290972, 0)
-supported.Size = UDim2.new(0, 384, 0, 199)
+supportedtab.Name = "supportedtab"
+supportedtab.Parent = Main
+supportedtab.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+supportedtab.BackgroundTransparency = 1.000
+supportedtab.Position = UDim2.new(0, 0, 0.300290972, 0)
+supportedtab.Size = UDim2.new(0, 384, 0, 199)
 
 arsenal.Name = "arsenal"
-arsenal.Parent = supported
+arsenal.Parent = supportedtab
 arsenal.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
 arsenal.BorderSizePixel = 0
 arsenal.Position = UDim2.new(0.0790331066, 0, 0.152840883, 0)
@@ -147,7 +148,7 @@ arsenal.TextWrapped = true
 UICorner_4.Parent = arsenal
 
 toh.Name = "toh"
-toh.Parent = supported
+toh.Parent = supportedtab
 toh.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
 toh.BorderSizePixel = 0
 toh.Position = UDim2.new(0.0772424415, 0, 0.510593891, 0)
@@ -163,7 +164,7 @@ toh.TextWrapped = true
 UICorner_5.Parent = toh
 
 pladmin.Name = "pladmin"
-pladmin.Parent = supported
+pladmin.Parent = supportedtab
 pladmin.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
 pladmin.BorderSizePixel = 0
 pladmin.Position = UDim2.new(0.554647624, 0, 0.146250814, 0)
@@ -179,7 +180,7 @@ pladmin.TextWrapped = true
 UICorner_6.Parent = pladmin
 
 http.Name = "http"
-http.Parent = supported
+http.Parent = supportedtab
 http.BackgroundTransparency = 1.000
 http.Position = UDim2.new(0.553185999, 0, 0.326139241, 0)
 http.Size = UDim2.new(0, 25, 0, 25)
@@ -189,7 +190,7 @@ http.ImageRectOffset = Vector2.new(604, 164)
 http.ImageRectSize = Vector2.new(36, 36)
 
 http_2.Name = "http"
-http_2.Parent = supported
+http_2.Parent = supportedtab
 http_2.BackgroundTransparency = 1.000
 http_2.Position = UDim2.new(0.0769901127, 0, 0.694312334, 0)
 http_2.Size = UDim2.new(0, 25, 0, 25)
@@ -199,7 +200,7 @@ http_2.ImageRectOffset = Vector2.new(604, 164)
 http_2.ImageRectSize = Vector2.new(36, 36)
 
 http_3.Name = "http"
-http_3.Parent = supported
+http_3.Parent = supportedtab
 http_3.BackgroundTransparency = 1.000
 http_3.Position = UDim2.new(0.0758396015, 0, 0.330320328, 0)
 http_3.Size = UDim2.new(0, 25, 0, 25)
@@ -264,16 +265,16 @@ humanoid.TextScaled = true
 humanoid.TextSize = 14.000
 humanoid.TextWrapped = true
 
-universal_2.Name = "universal"
-universal_2.Parent = Main
-universal_2.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-universal_2.BackgroundTransparency = 1.000
-universal_2.Position = UDim2.new(0, 0, 0.300290972, 0)
-universal_2.Size = UDim2.new(0, 384, 0, 199)
-universal_2.Visible = false
+universaltab.Name = "universaltab"
+universaltab.Parent = Main
+universaltab.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+universaltab.BackgroundTransparency = 1.000
+universaltab.Position = UDim2.new(0, 0, 0.300290972, 0)
+universaltab.Size = UDim2.new(0, 384, 0, 199)
+universaltab.Visible = false
 
 chatbot.Name = "chatbot"
-chatbot.Parent = universal_2
+chatbot.Parent = universaltab
 chatbot.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
 chatbot.BorderSizePixel = 0
 chatbot.Position = UDim2.new(0.0389401913, 0, 0.122662075, 0)
@@ -289,7 +290,7 @@ chatbot.TextWrapped = true
 UICorner_7.Parent = chatbot
 
 sfreach.Name = "sfreach"
-sfreach.Parent = universal_2
+sfreach.Parent = universaltab
 sfreach.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
 sfreach.BorderSizePixel = 0
 sfreach.Position = UDim2.new(0.583687246, 0, 0.117968597, 0)
@@ -305,7 +306,7 @@ sfreach.TextWrapped = true
 UICorner_8.Parent = sfreach
 
 cxspy.Name = "cxspy"
-cxspy.Parent = universal_2
+cxspy.Parent = universaltab
 cxspy.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
 cxspy.BorderSizePixel = 0
 cxspy.Position = UDim2.new(0.309790105, 0, 0.472716779, 0)
@@ -321,7 +322,7 @@ cxspy.TextWrapped = true
 UICorner_9.Parent = cxspy
 
 http_4.Name = "http"
-http_4.Parent = universal_2
+http_4.Parent = universaltab
 http_4.BackgroundTransparency = 1.000
 http_4.Position = UDim2.new(0.308373183, 0, 0.655614674, 0)
 http_4.Size = UDim2.new(0, 25, 0, 25)
@@ -386,30 +387,30 @@ ambientShadow.ImageTransparency = 0.880
 ambientShadow.ScaleType = Enum.ScaleType.Slice
 ambientShadow.SliceCenter = Rect.new(10, 10, 118, 118)
 
-supported_2.Name = "supported"
-supported_2.Parent = Main
-supported_2.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
-supported_2.BorderSizePixel = 0
-supported_2.Position = UDim2.new(0.00111099833, 0, 0.17226328, 0)
-supported_2.Size = UDim2.new(0, 141, 0, 37)
-supported_2.ZIndex = 2
-supported_2.Font = Enum.Font.SourceSans
-supported_2.Text = "Supported Games"
-supported_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-supported_2.TextScaled = true
-supported_2.TextSize = 14.000
-supported_2.TextWrapped = true
+supported.Name = "supported"
+supported.Parent = Main
+supported.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+supported.BorderSizePixel = 0
+supported.Position = UDim2.new(0.00111099833, 0, 0.17226328, 0)
+supported.Size = UDim2.new(0, 141, 0, 37)
+supported.ZIndex = 2
+supported.Font = Enum.Font.SourceSans
+supported.Text = "Supported Games"
+supported.TextColor3 = Color3.fromRGB(255, 255, 255)
+supported.TextScaled = true
+supported.TextSize = 14.000
+supported.TextWrapped = true
 
-humanoid_2.Name = "humanoid"
-humanoid_2.Parent = Main
-humanoid_2.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-humanoid_2.BackgroundTransparency = 1.000
-humanoid_2.Position = UDim2.new(0, 0, 0.300290972, 0)
-humanoid_2.Size = UDim2.new(0, 384, 0, 199)
-humanoid_2.Visible = false
+humanoidtab.Name = "humanoidtab"
+humanoidtab.Parent = Main
+humanoidtab.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+humanoidtab.BackgroundTransparency = 1.000
+humanoidtab.Position = UDim2.new(0, 0, 0.300290972, 0)
+humanoidtab.Size = UDim2.new(0, 384, 0, 199)
+humanoidtab.Visible = false
 
 warning.Name = "warning"
-warning.Parent = humanoid_2
+warning.Parent = humanoidtab
 warning.BackgroundTransparency = 1.000
 warning.Position = UDim2.new(0.0734774992, 0, 0.0864418522, 0)
 warning.Size = UDim2.new(0, 25, 0, 25)
@@ -419,7 +420,7 @@ warning.ImageRectOffset = Vector2.new(364, 324)
 warning.ImageRectSize = Vector2.new(36, 36)
 
 walkspeedbtn.Name = "walkspeedbtn"
-walkspeedbtn.Parent = humanoid_2
+walkspeedbtn.Parent = humanoidtab
 walkspeedbtn.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
 walkspeedbtn.BorderSizePixel = 0
 walkspeedbtn.Position = UDim2.new(0.0713412538, 0, 0.377771407, 0)
@@ -433,7 +434,7 @@ walkspeedbtn.TextSize = 14.000
 walkspeedbtn.TextWrapped = true
 
 walkspeed.Name = "walkspeed"
-walkspeed.Parent = humanoid_2
+walkspeed.Parent = humanoidtab
 walkspeed.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
 walkspeed.BorderSizePixel = 0
 walkspeed.Position = UDim2.new(0.0720909834, 0, 0.226285025, 0)
@@ -448,7 +449,7 @@ walkspeed.TextSize = 14.000
 walkspeed.TextWrapped = true
 
 warning_2.Name = "warning"
-warning_2.Parent = humanoid_2
+warning_2.Parent = humanoidtab
 warning_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 warning_2.BackgroundTransparency = 1.000
 warning_2.Position = UDim2.new(0.138816237, 0, 0.10739702, 0)
@@ -462,7 +463,7 @@ warning_2.TextSize = 14.000
 warning_2.TextWrapped = true
 
 warning2.Name = "warning2"
-warning2.Parent = humanoid_2
+warning2.Parent = humanoidtab
 warning2.BackgroundTransparency = 1.000
 warning2.Position = UDim2.new(0.589102507, 0, 0.0864418522, 0)
 warning2.Size = UDim2.new(0, 25, 0, 25)
@@ -472,7 +473,7 @@ warning2.ImageRectOffset = Vector2.new(364, 324)
 warning2.ImageRectSize = Vector2.new(36, 36)
 
 jp.Name = "jp"
-jp.Parent = humanoid_2
+jp.Parent = humanoidtab
 jp.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
 jp.BorderSizePixel = 0
 jp.Position = UDim2.new(0.587715983, 0, 0.226285025, 0)
@@ -487,7 +488,7 @@ jp.TextSize = 14.000
 jp.TextWrapped = true
 
 jpbtn.Name = "jpbtn"
-jpbtn.Parent = humanoid_2
+jpbtn.Parent = humanoidtab
 jpbtn.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
 jpbtn.BorderSizePixel = 0
 jpbtn.Position = UDim2.new(0.586966276, 0, 0.377771407, 0)
@@ -501,7 +502,7 @@ jpbtn.TextSize = 14.000
 jpbtn.TextWrapped = true
 
 warning2_2.Name = "warning2"
-warning2_2.Parent = humanoid_2
+warning2_2.Parent = humanoidtab
 warning2_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 warning2_2.BackgroundTransparency = 1.000
 warning2_2.Position = UDim2.new(0.654441237, 0, 0.10739702, 0)
@@ -552,7 +553,7 @@ UICorner_11.Parent = TextLabel_2
 
 -- Scripts:
 
-local function TONCM_fake_script() -- arsenal.LocalScript 
+local function AVQS_fake_script() -- arsenal.LocalScript 
 	local script = Instance.new('LocalScript', arsenal)
 
 	local sg = game:GetService("StarterGui")
@@ -569,8 +570,8 @@ local function TONCM_fake_script() -- arsenal.LocalScript
 		notify("CXHub", "DexHub Arsenal was loaded. (NO KEY!)")
 	end)
 end
-coroutine.wrap(TONCM_fake_script)()
-local function BGTRWJ_fake_script() -- toh.LocalScript 
+coroutine.wrap(AVQS_fake_script)()
+local function LQSYBVZ_fake_script() -- toh.LocalScript 
 	local script = Instance.new('LocalScript', toh)
 
 	local sg = game:GetService("StarterGui")
@@ -587,8 +588,8 @@ local function BGTRWJ_fake_script() -- toh.LocalScript
 		notify("CXHub", "Tower of Hell GUI was loaded.")
 	end)
 end
-coroutine.wrap(BGTRWJ_fake_script)()
-local function HLGB_fake_script() -- pladmin.LocalScript 
+coroutine.wrap(LQSYBVZ_fake_script)()
+local function HIRYMI_fake_script() -- pladmin.LocalScript 
 	local script = Instance.new('LocalScript', pladmin)
 
 	local sg = game:GetService("StarterGui")
@@ -605,8 +606,8 @@ local function HLGB_fake_script() -- pladmin.LocalScript
 		notify("CXHub", "Prison Life Admin was loaded!")
 	end)
 end
-coroutine.wrap(HLGB_fake_script)()
-local function DECNF_fake_script() -- Main.Dragify 
+coroutine.wrap(HIRYMI_fake_script)()
+local function LFOX_fake_script() -- Main.Dragify 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -661,8 +662,8 @@ local function DECNF_fake_script() -- Main.Dragify
 	notify("CXHub", "Loaded! Enjoy. By @focat on rblx")
 	notify("Join our Discord! - CXHub", "https://discord.gg/X3fZ9WK43k")
 end
-coroutine.wrap(DECNF_fake_script)()
-local function HVGGHWD_fake_script() -- close.LocalScript 
+coroutine.wrap(LFOX_fake_script)()
+local function TNKYI_fake_script() -- close.LocalScript 
 	local script = Instance.new('LocalScript', close)
 
 	local sg = game:GetService("StarterGui")
@@ -676,31 +677,32 @@ local function HVGGHWD_fake_script() -- close.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		notify("CXHub", "Destroyed the Hub.")
+		getgenv().loaded = false
 		script.Parent.Parent:Destroy() -- destroys the hub 
 	end)
 end
-coroutine.wrap(HVGGHWD_fake_script)()
-local function UGSP_fake_script() -- universal.LocalScript 
+coroutine.wrap(TNKYI_fake_script)()
+local function ZNFZIOE_fake_script() -- universal.LocalScript 
 	local script = Instance.new('LocalScript', universal)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.supported.Visible = false
-		script.Parent.Parent.universal.Visible = true
-		script.Parent.Parent.humanoid.Visible = false
+		script.Parent.Parent.supportedtab.Visible = false
+		script.Parent.Parent.universaltab.Visible = true
+		script.Parent.Parent.humanoidtab.Visible = false
 	end)
 end
-coroutine.wrap(UGSP_fake_script)()
-local function JUVIC_fake_script() -- humanoid.LocalScript 
+coroutine.wrap(ZNFZIOE_fake_script)()
+local function EKMQOEG_fake_script() -- humanoid.LocalScript 
 	local script = Instance.new('LocalScript', humanoid)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.supported.Visible = false
-		script.Parent.Parent.universal.Visible = false
-		script.Parent.Parent.humanoid.Visible = true
+		script.Parent.Parent.supportedtab.Visible = false
+		script.Parent.Parent.universaltab.Visible = false
+		script.Parent.Parent.humanoidtab.Visible = true
 	end)
 end
-coroutine.wrap(JUVIC_fake_script)()
-local function QTWIUHT_fake_script() -- chatbot.LocalScript 
+coroutine.wrap(EKMQOEG_fake_script)()
+local function AEGEY_fake_script() -- chatbot.LocalScript 
 	local script = Instance.new('LocalScript', chatbot)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -726,8 +728,8 @@ local function QTWIUHT_fake_script() -- chatbot.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(QTWIUHT_fake_script)()
-local function CFBBDD_fake_script() -- sfreach.LocalScript 
+coroutine.wrap(AEGEY_fake_script)()
+local function QKHMQ_fake_script() -- sfreach.LocalScript 
 	local script = Instance.new('LocalScript', sfreach)
 
 	local sg = game:GetService("StarterGui")
@@ -744,8 +746,8 @@ local function CFBBDD_fake_script() -- sfreach.LocalScript
 		notify("CXHub", "Sword fight reach was loaded.")
 	end)
 end
-coroutine.wrap(CFBBDD_fake_script)()
-local function OKDWS_fake_script() -- cxspy.LocalScript 
+coroutine.wrap(QKHMQ_fake_script)()
+local function PTRE_fake_script() -- cxspy.LocalScript 
 	local script = Instance.new('LocalScript', cxspy)
 
 	local sg = game:GetService("StarterGui")
@@ -762,38 +764,38 @@ local function OKDWS_fake_script() -- cxspy.LocalScript
 		notify("CXHub", "CXSpy was loaded!")
 	end)
 end
-coroutine.wrap(OKDWS_fake_script)()
-local function PPORLD_fake_script() -- supported_2.LocalScript 
-	local script = Instance.new('LocalScript', supported_2)
+coroutine.wrap(PTRE_fake_script)()
+local function OGPUBTP_fake_script() -- supported.LocalScript 
+	local script = Instance.new('LocalScript', supported)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.supported.Visible = true
-		script.Parent.Parent.universal.Visible = false
-		script.Parent.Parent.humanoid.Visible = false
+		script.Parent.Parent.supportedtab.Visible = true
+		script.Parent.Parent.universaltab.Visible = false
+		script.Parent.Parent.humanoidtab.Visible = false
 	end)
 end
-coroutine.wrap(PPORLD_fake_script)()
-local function KECVC_fake_script() -- walkspeedbtn.LocalScript 
+coroutine.wrap(OGPUBTP_fake_script)()
+local function ICDR_fake_script() -- walkspeedbtn.LocalScript 
 	local script = Instance.new('LocalScript', walkspeedbtn)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(script.Parent.Parent.walkspeed.Text)
 	end)
 end
-coroutine.wrap(KECVC_fake_script)()
-local function IBXHL_fake_script() -- jpbtn.LocalScript 
+coroutine.wrap(ICDR_fake_script)()
+local function MNAVJVR_fake_script() -- jpbtn.LocalScript 
 	local script = Instance.new('LocalScript', jpbtn)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = tonumber(script.Parent.Parent.jp.Text)
 	end)
 end
-coroutine.wrap(IBXHL_fake_script)()
-local function CQJD_fake_script() -- Loader.LocalScript 
+coroutine.wrap(MNAVJVR_fake_script)()
+local function MXBAMZ_fake_script() -- Loader.LocalScript 
 	local script = Instance.new('LocalScript', Loader)
 
 	local function notify(title, text)
-		game:GetService("StarterGui"):SetCore("SendNotification", {
+		game:GetService("StarterGui").SetCore("SendNotification", {
 			Title = title;
 			Text = text
 		})
@@ -863,4 +865,4 @@ local function CQJD_fake_script() -- Loader.LocalScript
 		end
 	end
 end
-coroutine.wrap(CQJD_fake_script)()
+coroutine.wrap(MXBAMZ_fake_script)()
