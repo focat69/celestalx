@@ -68,7 +68,7 @@ local UICorner_11 = Instance.new("UICorner")
 --Properties:
 
 cxhub.Name = "cxhub"
-cxhub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+cxhub.Parent = game:WaitForChild("CoreGui")
 cxhub.DisplayOrder = 999
 
 Main.Name = "Main"
