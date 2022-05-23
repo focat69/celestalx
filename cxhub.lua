@@ -850,9 +850,11 @@ local function MXBAMZ_fake_script() -- Loader.LocalScript
 			wait(1)
 			script.Parent.Visible = false
 			script.Parent.Parent.Main.Visible = true
+			--[[
 			script.Parent.Parent.supported.Visible = true
 			script.Parent.Parent.universal.Visible = false
 			script.Parent.Parent.humanoid.Visible = false
+			]]
 			--end
 		else
 			wait(2)
@@ -860,9 +862,11 @@ local function MXBAMZ_fake_script() -- Loader.LocalScript
 			wait(1)
 			script.Parent.Visible = false
 			script.Parent.Parent.Main.Visible = true
+			--[[
 			script.Parent.Parent.supported.Visible = false
 			script.Parent.Parent.universal.Visible = true
 			script.Parent.Parent.humanoid.Visible = false
+			]]
 		end
 	end
 end
