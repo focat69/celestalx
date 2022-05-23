@@ -847,6 +847,7 @@ local function MXBAMZ_fake_script() -- Loader.LocalScript
 			--if g then
 			wait(2)
 			notify("CXHub", "CXHub supports the current game! Enjoy!")
+			wait(1)
 			script.Parent.Visible = false
 			script.Parent.Parent.Main.Visible = true
 			script.Parent.Parent.supported.Visible = true
