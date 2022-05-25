@@ -7,7 +7,7 @@ Removed *prison life* from CXSpy cause it's pretty much useless and doesn't fit 
   
   
 ## Some scripts we offer  
-We have a hub, with 6 scripts!  
+We have a hub, with 12 scripts + a bulit in executor!  
 More coming as the hub develops.  
   
   
