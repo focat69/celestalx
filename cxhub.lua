@@ -106,7 +106,15 @@ local cxico_2 = Instance.new("ImageLabel")
 --Properties:
 
 cxhub.Name = "cxhub"
-cxhub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+_G.protected = false
+if syn then
+	syn.protect_gui(cxhub)
+	_G.protected = true
+	messagebox("CXHub has detected you are using Synapse. Because of this, we are able to protect you!", "CXHub", 0)
+else
+	_G.protected = false
+end
+cxhub.Parent = game:WaitForChild("CoreGui")
 cxhub.DisplayOrder = 999
 
 Main.Name = "Main"
@@ -114,6 +122,7 @@ Main.Parent = cxhub
 Main.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 Main.Position = UDim2.new(0.399543375, -192, 0.45411393, -144)
 Main.Size = UDim2.new(0, 648, 0, 345)
+Main.Visible = false
 
 UICorner.CornerRadius = UDim.new(0, 3)
 UICorner.Parent = Main
@@ -626,7 +635,11 @@ info.BackgroundTransparency = 1.000
 info.Position = UDim2.new(0.202160478, 0, 0.211594209, 0)
 info.Size = UDim2.new(0, 233, 0, 18)
 info.Font = Enum.Font.SourceSans
-info.Text = "CXHub v4 | Gui protected by Synapse X."
+if _G.protected then
+	info.Text = "CXHub v4 | Gui protected by Synapse X."
+else
+	info.Text = "CXHub v4 | Gui not protected by Synapse X. (Synapse X not running/found)"
+end
 info.TextColor3 = Color3.fromRGB(117, 117, 117)
 info.TextScaled = true
 info.TextSize = 14.000
@@ -800,7 +813,7 @@ Loader.Parent = cxhub
 Loader.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
 Loader.Position = UDim2.new(0.5, -223, 0.5, -115)
 Loader.Size = UDim2.new(0, 446, 0, 231)
-Loader.Visible = false
+Loader.Visible = true
 
 title.Name = "title"
 title.Parent = Loader
