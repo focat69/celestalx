@@ -73,6 +73,7 @@ _G.protected = false
 if syn then
 	syn.protect_gui(cxhub)
 	_G.protected = true
+	messagebox("CXHub has detected you are using Synapse. Because of this, we are able to protect you!", "CXHub", 0)
 else
 	_G.protected = false
 end
