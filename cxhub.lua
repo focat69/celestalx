@@ -106,15 +106,7 @@ local cxico_2 = Instance.new("ImageLabel")
 --Properties:
 
 cxhub.Name = "cxhub"
-_G.protected = false
-if syn then
-	syn.protect_gui(cxhub)
-	_G.protected = true
-	messagebox("CXHub has detected you are using Synapse. Because of this, we are able to protect you!", "CXHub", 0)
-else
-	_G.protected = false
-end
-cxhub.Parent = game:WaitForChild("CoreGui")
+cxhub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 cxhub.DisplayOrder = 999
 
 Main.Name = "Main"
@@ -122,7 +114,6 @@ Main.Parent = cxhub
 Main.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 Main.Position = UDim2.new(0.399543375, -192, 0.45411393, -144)
 Main.Size = UDim2.new(0, 648, 0, 345)
-Main.Visible = false
 
 UICorner.CornerRadius = UDim.new(0, 3)
 UICorner.Parent = Main
@@ -635,11 +626,7 @@ info.BackgroundTransparency = 1.000
 info.Position = UDim2.new(0.202160478, 0, 0.211594209, 0)
 info.Size = UDim2.new(0, 233, 0, 18)
 info.Font = Enum.Font.SourceSans
-if _G.protected then
-	info.Text = "CXHub v4 | Gui protected by Synapse X."
-else
-	info.Text = "CXHub v4 | Gui not protected by Synapse X. (Synapse X not running/found)"
-end
+info.Text = "CXHub v4 | Gui protected by Synapse X."
 info.TextColor3 = Color3.fromRGB(117, 117, 117)
 info.TextScaled = true
 info.TextSize = 14.000
@@ -745,7 +732,7 @@ server.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 server.BackgroundTransparency = 1.000
 server.Position = UDim2.new(0.0787037089, 0, 0.823188424, 0)
 server.Size = UDim2.new(0, 34, 0, 34)
-server.Image = "rbxassetid://9720092710"
+server.Image = "rbxassetid://9720261877"
 
 executortab.Name = "executortab"
 executortab.Parent = Main
@@ -813,6 +800,7 @@ Loader.Parent = cxhub
 Loader.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
 Loader.Position = UDim2.new(0.5, -223, 0.5, -115)
 Loader.Size = UDim2.new(0, 446, 0, 231)
+Loader.Visible = false
 
 title.Name = "title"
 title.Parent = Loader
@@ -853,7 +841,7 @@ cxico_2.Image = "rbxassetid://9720039437"
 
 -- Scripts:
 
-local function NVCH_fake_script() -- arsenal.LocalScript 
+local function CRPOXF_fake_script() -- arsenal.LocalScript 
 	local script = Instance.new('LocalScript', arsenal)
 
 	local sg = game:GetService("StarterGui")
@@ -870,8 +858,8 @@ local function NVCH_fake_script() -- arsenal.LocalScript
 		notify("CXHub v4 | Script Executor", "DexHub Arsenal was loaded. (NO KEY!)")
 	end)
 end
-coroutine.wrap(NVCH_fake_script)()
-local function OXGWP_fake_script() -- toh.LocalScript 
+coroutine.wrap(CRPOXF_fake_script)()
+local function OVAWMQI_fake_script() -- toh.LocalScript 
 	local script = Instance.new('LocalScript', toh)
 
 	local sg = game:GetService("StarterGui")
@@ -888,8 +876,8 @@ local function OXGWP_fake_script() -- toh.LocalScript
 		notify("CXHub v4 | Script Executor", "Tower of Hell GUI was loaded.")
 	end)
 end
-coroutine.wrap(OXGWP_fake_script)()
-local function EWCFO_fake_script() -- pladmin.LocalScript 
+coroutine.wrap(OVAWMQI_fake_script)()
+local function ICEI_fake_script() -- pladmin.LocalScript 
 	local script = Instance.new('LocalScript', pladmin)
 
 	local sg = game:GetService("StarterGui")
@@ -906,8 +894,8 @@ local function EWCFO_fake_script() -- pladmin.LocalScript
 		notify("CXHub v4 | Script Executor", "Prison Life Admin was loaded!")
 	end)
 end
-coroutine.wrap(EWCFO_fake_script)()
-local function FPWJKGG_fake_script() -- pf.LocalScript 
+coroutine.wrap(ICEI_fake_script)()
+local function QWVTGQV_fake_script() -- pf.LocalScript 
 	local script = Instance.new('LocalScript', pf)
 
 	local sg = game:GetService("StarterGui")
@@ -924,8 +912,8 @@ local function FPWJKGG_fake_script() -- pf.LocalScript
 		notify("CXHub v4 | Script Executor", "Phantom Forces (Evo v2) was loaded!")
 	end)
 end
-coroutine.wrap(FPWJKGG_fake_script)()
-local function QGCEHK_fake_script() -- Main.Dragify 
+coroutine.wrap(QWVTGQV_fake_script)()
+local function PGRSB_fake_script() -- Main.Dragify 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -982,8 +970,8 @@ local function QGCEHK_fake_script() -- Main.Dragify
 	setclipboard("https://discord.gg/X3fZ9WK43k")
 	notify("CXHub v4 | Clipboard", "Copied invite to clipboard.")
 end
-coroutine.wrap(QGCEHK_fake_script)()
-local function YVRYLUJ_fake_script() -- close.close 
+coroutine.wrap(PGRSB_fake_script)()
+local function HZUURDM_fake_script() -- close.close 
 	local script = Instance.new('LocalScript', close)
 
 	local sg = game:GetService("StarterGui")
@@ -1001,8 +989,8 @@ local function YVRYLUJ_fake_script() -- close.close
 		script.Parent.Parent:Destroy() -- destroys the hub 
 	end)
 end
-coroutine.wrap(YVRYLUJ_fake_script)()
-local function HNSC_fake_script() -- chatbot.LocalScript 
+coroutine.wrap(HZUURDM_fake_script)()
+local function CRHP_fake_script() -- chatbot.LocalScript 
 	local script = Instance.new('LocalScript', chatbot)
 
 	local function notify(title, text)
@@ -1037,8 +1025,8 @@ local function HNSC_fake_script() -- chatbot.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(HNSC_fake_script)()
-local function QNNALLV_fake_script() -- cxspy.LocalScript 
+coroutine.wrap(CRHP_fake_script)()
+local function JBUB_fake_script() -- cxspy.LocalScript 
 	local script = Instance.new('LocalScript', cxspy)
 
 	local sg = game:GetService("StarterGui")
@@ -1055,8 +1043,8 @@ local function QNNALLV_fake_script() -- cxspy.LocalScript
 		notify("CXHub v4 | Script Executor", "CXSpy was loaded!")
 	end)
 end
-coroutine.wrap(QNNALLV_fake_script)()
-local function VWLVRCC_fake_script() -- iy.LocalScript 
+coroutine.wrap(JBUB_fake_script)()
+local function JNRQ_fake_script() -- iy.LocalScript 
 	local script = Instance.new('LocalScript', iy)
 
 	local sg = game:GetService("StarterGui")
@@ -1073,8 +1061,8 @@ local function VWLVRCC_fake_script() -- iy.LocalScript
 		notify("CXHub v4 | Script Executor", "Infinite Yield was loaded!")
 	end)
 end
-coroutine.wrap(VWLVRCC_fake_script)()
-local function YFPTY_fake_script() -- cmdx.LocalScript 
+coroutine.wrap(JNRQ_fake_script)()
+local function FJXPOXF_fake_script() -- cmdx.LocalScript 
 	local script = Instance.new('LocalScript', cmdx)
 
 	local sg = game:GetService("StarterGui")
@@ -1091,8 +1079,8 @@ local function YFPTY_fake_script() -- cmdx.LocalScript
 		notify("CXHub v4 | Script Executor", "CMD-X was loaded!")
 	end)
 end
-coroutine.wrap(YFPTY_fake_script)()
-local function UEGNP_fake_script() -- sfreach.LocalScript 
+coroutine.wrap(FJXPOXF_fake_script)()
+local function WXYT_fake_script() -- sfreach.LocalScript 
 	local script = Instance.new('LocalScript', sfreach)
 
 	local sg = game:GetService("StarterGui")
@@ -1109,8 +1097,8 @@ local function UEGNP_fake_script() -- sfreach.LocalScript
 		notify("CXHub v4 | Script Executor", "Sword fight reach was loaded.")
 	end)
 end
-coroutine.wrap(UEGNP_fake_script)()
-local function DSQY_fake_script() -- feamogus.LocalScript 
+coroutine.wrap(WXYT_fake_script)()
+local function OOUW_fake_script() -- feamogus.LocalScript 
 	local script = Instance.new('LocalScript', feamogus)
 
 	local sg = game:GetService("StarterGui")
@@ -2056,8 +2044,8 @@ local function DSQY_fake_script() -- feamogus.LocalScript
 		end
 	end)
 end
-coroutine.wrap(DSQY_fake_script)()
-local function RPDI_fake_script() -- owlhub.LocalScript 
+coroutine.wrap(OOUW_fake_script)()
+local function PHXHOH_fake_script() -- owlhub.LocalScript 
 	local script = Instance.new('LocalScript', owlhub)
 
 	local sg = game:GetService("StarterGui")
@@ -2074,8 +2062,8 @@ local function RPDI_fake_script() -- owlhub.LocalScript
 		notify("CXHub v4 | Script Executor", "Owl Hub was loaded!")
 	end)
 end
-coroutine.wrap(RPDI_fake_script)()
-local function KLUUK_fake_script() -- feflip.LocalScript 
+coroutine.wrap(PHXHOH_fake_script)()
+local function JUNAEYN_fake_script() -- feflip.LocalScript 
 	local script = Instance.new('LocalScript', feflip)
 
 	local sg = game:GetService("StarterGui")
@@ -2176,38 +2164,38 @@ local function KLUUK_fake_script() -- feflip.LocalScript
 		game.StarterGui:SetCore("SendNotification", {Title = "FeFlip - CXHub v4", Text = "FeFlip loaded successfully! Press \"Okay, I'm ready!\" to start!", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "Okay, I'm ready!"})
 	end)
 end
-coroutine.wrap(KLUUK_fake_script)()
-local function SXQTLW_fake_script() -- walkspeedbtn.LocalScript 
+coroutine.wrap(JUNAEYN_fake_script)()
+local function QAGBYLX_fake_script() -- walkspeedbtn.LocalScript 
 	local script = Instance.new('LocalScript', walkspeedbtn)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(script.Parent.Parent.walkspeed.Text)
 	end)
 end
-coroutine.wrap(SXQTLW_fake_script)()
-local function CVTX_fake_script() -- jpbtn.LocalScript 
+coroutine.wrap(QAGBYLX_fake_script)()
+local function OKYTC_fake_script() -- jpbtn.LocalScript 
 	local script = Instance.new('LocalScript', jpbtn)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = tonumber(script.Parent.Parent.jp.Text)
 	end)
 end
-coroutine.wrap(CVTX_fake_script)()
-local function XSFF_fake_script() -- useravatar.LocalScript 
+coroutine.wrap(OKYTC_fake_script)()
+local function GDRYMS_fake_script() -- useravatar.LocalScript 
 	local script = Instance.new('LocalScript', useravatar)
 
 	-- get thumbnail of user
 	-- https://developer.roblox.com/en-us/api-reference/function/Players/GetUserThumbnailAsync
 	local Players = game:GetService("Players");local player = Players.LocalPlayer;local userId = player.UserId;local thumbType = Enum.ThumbnailType.HeadShot;local thumbSize = Enum.ThumbnailSize.Size100x100;local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize);local imageLabel = script.Parent;imageLabel.Image = content;imageLabel.Size = UDim2.new(0, 420, 0, 420);
 end
-coroutine.wrap(XSFF_fake_script)()
-local function SSSJ_fake_script() -- greeting.LocalScript 
+coroutine.wrap(GDRYMS_fake_script)()
+local function NOWPTC_fake_script() -- greeting.LocalScript 
 	local script = Instance.new('LocalScript', greeting)
 
 	script.Parent.Text="Welcome to CXHub, "..game.Players.LocalPlayer.Name.."."
 end
-coroutine.wrap(SSSJ_fake_script)()
-local function YOWUNYX_fake_script() -- info.LocalScript 
+coroutine.wrap(NOWPTC_fake_script)()
+local function NBHG_fake_script() -- info.LocalScript 
 	local script = Instance.new('LocalScript', info)
 
 	if syn then
@@ -2216,8 +2204,8 @@ local function YOWUNYX_fake_script() -- info.LocalScript
 		script.Parent.Text="CXHub v4 | Gui not protected by Synapse X."
 	end
 end
-coroutine.wrap(YOWUNYX_fake_script)()
-local function WOEMRA_fake_script() -- github.LocalScript 
+coroutine.wrap(NBHG_fake_script)()
+local function UGNTUN_fake_script() -- github.LocalScript 
 	local script = Instance.new('LocalScript', github)
 
 	local function notify(title, text)
@@ -2232,8 +2220,8 @@ local function WOEMRA_fake_script() -- github.LocalScript
 		notify("CXHub v4 | Github", "The github link was copied!")
 	end)
 end
-coroutine.wrap(WOEMRA_fake_script)()
-local function VEOVI_fake_script() -- supported.LocalScript 
+coroutine.wrap(UGNTUN_fake_script)()
+local function PJWHAW_fake_script() -- supported.LocalScript 
 	local script = Instance.new('LocalScript', supported)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2243,8 +2231,8 @@ local function VEOVI_fake_script() -- supported.LocalScript
 		script.Parent.Parent.Parent.executortab.Visible = false
 	end)
 end
-coroutine.wrap(VEOVI_fake_script)()
-local function RJYVF_fake_script() -- universal.LocalScript 
+coroutine.wrap(PJWHAW_fake_script)()
+local function YLXOSS_fake_script() -- universal.LocalScript 
 	local script = Instance.new('LocalScript', universal)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2254,8 +2242,8 @@ local function RJYVF_fake_script() -- universal.LocalScript
 		script.Parent.Parent.Parent.executortab.Visible = false
 	end)
 end
-coroutine.wrap(RJYVF_fake_script)()
-local function RNAYNW_fake_script() -- humanoid.LocalScript 
+coroutine.wrap(YLXOSS_fake_script)()
+local function TNBED_fake_script() -- humanoid.LocalScript 
 	local script = Instance.new('LocalScript', humanoid)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2265,8 +2253,8 @@ local function RNAYNW_fake_script() -- humanoid.LocalScript
 		script.Parent.Parent.Parent.executortab.Visible = false
 	end)
 end
-coroutine.wrap(RNAYNW_fake_script)()
-local function MFPREPA_fake_script() -- executor.LocalScript 
+coroutine.wrap(TNBED_fake_script)()
+local function NXRBMBI_fake_script() -- executor.LocalScript 
 	local script = Instance.new('LocalScript', executor)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2276,8 +2264,8 @@ local function MFPREPA_fake_script() -- executor.LocalScript
 		script.Parent.Parent.Parent.executortab.Visible = true
 	end)
 end
-coroutine.wrap(MFPREPA_fake_script)()
-local function BLJPXXK_fake_script() -- server.LocalScript 
+coroutine.wrap(NXRBMBI_fake_script)()
+local function PYHTAJ_fake_script() -- server.LocalScript 
 	local script = Instance.new('LocalScript', server)
 
 	local function notify(title, text)
@@ -2292,8 +2280,8 @@ local function BLJPXXK_fake_script() -- server.LocalScript
 		notify("CXHub v4 | Discord", "The discord invite was copied!")
 	end)
 end
-coroutine.wrap(BLJPXXK_fake_script)()
-local function SBCWKL_fake_script() -- execute.LocalScript 
+coroutine.wrap(PYHTAJ_fake_script)()
+local function RGTBKFB_fake_script() -- execute.LocalScript 
 	local script = Instance.new('LocalScript', execute)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2301,8 +2289,8 @@ local function SBCWKL_fake_script() -- execute.LocalScript
 		loadstring(s.Text)
 	end)
 end
-coroutine.wrap(SBCWKL_fake_script)()
-local function HBZQ_fake_script() -- Loader.LocalScript 
+coroutine.wrap(RGTBKFB_fake_script)()
+local function RIJD_fake_script() -- Loader.LocalScript 
 	local script = Instance.new('LocalScript', Loader)
 
 	local function notify(title, text)
@@ -2392,8 +2380,8 @@ local function HBZQ_fake_script() -- Loader.LocalScript
 		end
 	end
 end
-coroutine.wrap(HBZQ_fake_script)()
-local function FHEDD_fake_script() -- Loader.Dragify 
+coroutine.wrap(RIJD_fake_script)()
+local function QPIMYY_fake_script() -- Loader.Dragify 
 	local script = Instance.new('LocalScript', Loader)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -2436,4 +2424,4 @@ local function FHEDD_fake_script() -- Loader.Dragify
 		end
 	end)
 end
-coroutine.wrap(FHEDD_fake_script)()
+coroutine.wrap(QPIMYY_fake_script)()
