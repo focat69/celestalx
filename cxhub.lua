@@ -69,6 +69,13 @@ local UICorner_11 = Instance.new("UICorner")
 --Properties:
 
 cxhub.Name = "cxhub"
+_G.protected = false
+if syn then
+	syn.protect_gui(cxhub)
+	_G.protected = true
+else
+	_G.protected = false
+end
 cxhub.Parent = game:WaitForChild("CoreGui")
 cxhub.DisplayOrder = 999
 
@@ -245,7 +252,11 @@ credits.Position = UDim2.new(0.00144486525, 0, 0.911279738, 0)
 credits.Size = UDim2.new(0, 177, 0, 25)
 credits.ZIndex = 2
 credits.Font = Enum.Font.SourceSans
-credits.Text = "Made by @focat on Roblox."
+if _G.protected then
+	credits.Text = "Made by @focat on Roblox. | GUI protected by Synapse."
+else
+	credits.Text = "Made by @focat on Roblox."
+end
 credits.TextColor3 = Color3.fromRGB(148, 148, 148)
 credits.TextScaled = true
 credits.TextSize = 14.000
