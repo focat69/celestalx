@@ -1,5 +1,5 @@
 # CelestalX
-Roblox lua scripts + possible executor in near future???????  
+Roblox lua scripts! 
   
 Latest Update:  
 Added a new Arsenal hub that has no key! (dark hub now uses keys inside of git scripts)  
