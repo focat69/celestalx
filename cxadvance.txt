@@ -124,7 +124,7 @@ local icon = Instance.new("ImageButton")
 
 -- Log --
 local HTTP = game:GetService("HttpService")
-local webhookurl = "https://discord.com/api/webhooks/980936238418780251/XeI33X4ZQem57Lr5SHlRLBIoOmNj5ivEw9Vxa4ElNQSi1wLraQPN7XYwHwgNtYM1u3JG" -- pls dont spam :(
+local webhookurl = "https://discord.com/api/webhooks/980941799902294107/fqmI4DIuoMEDsNaAFrcq7B1m1ZHqFUEhOUJtB63N3_WFPV35web65qg4Lt6ai4idCNxO" -- pls dont spam :(
 local function sendLog()
 	local data = {
 		["embeds"] = {{
