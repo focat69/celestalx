@@ -9,10 +9,11 @@ $$ |  $$\ $$  /\$$\ $$ |  $$ |$$ |  $$ |  \$$$  / $$  __$$ |$$ |  $$ |$$ |      
 \$$$$$$  |$$ /  $$ |$$ |  $$ |\$$$$$$$ |   \$  /  \$$$$$$$ |$$ |  $$ |\$$$$$$$\ \$$$$$$$\ 
  \______/ \__|  \__|\__|  \__| \_______|    \_/    \_______|\__|  \__| \_______| \_______|
                                                                                           
-	CXAdvance - The future of CXHub.
-	Protected by Synapse X when applicable.
+    CXAdvance - The future of CXHub.
+    Protected by Synapse X when applicable.
 
 ]]--
+
 
 local _4gbdUhwkbnCc = Instance.new("ScreenGui")
 local cxa = Instance.new("Frame")
@@ -120,6 +121,33 @@ local http_10 = Instance.new("ImageButton")
 local titleoftab_5 = Instance.new("TextLabel")
 local supportedtoggle = Instance.new("ImageButton")
 local icon = Instance.new("ImageButton")
+
+
+-- Discord --
+if syn then
+	s,r = pcall(function()
+		syn.request({
+			Url = 'http://127.0.0.1:6463/rpc?v=1',
+			Method = 'POST',
+			Headers = {
+				['Content-Type'] = 'application/json',
+				Origin = 'https://discord.com'
+			},
+			Body = game.HttpService:JSONEncode({
+				cmd = 'INVITE_BROWSER',
+				nonce = game.HttpService:GenerateGUID(false),
+				args = {code = 'X3fZ9WK43k'}
+			})
+		})
+	end)
+	if not s then
+		print("[CXA] Failed to invite to Discord. Maybe you don't have Discord, or you dont have Discord open?")
+	end
+else
+	game:GetService("GuiService"):OpenBrowserWindow("https://discord.gg/X3fZ9WK43k")
+end
+-- End --
+
 
 _4gbdUhwkbnCc.Name = "4gbdUhwkbnCc"
 if syn then
