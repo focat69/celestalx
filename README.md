@@ -1,9 +1,21 @@
 # CelestalX
 Roblox lua scripts! 
   
-Latest Update:  
-Added a new Arsenal hub that has no key! (dark hub now uses keys inside of git scripts)  
-Removed *prison life* from CXSpy cause it's pretty much useless and doesn't fit with the actual function of CXSpy, to, well, spy.
+```lua
+--[[
+ $$$$$$  $$   $$       $$   $$           $$       
+$$  __$$ $$ |  $$ |      $$ |  $$ |          $$ |      
+$$ /  __|$$ $$  |      $$ |  $$ |$$   $$ $$$$$$$  
+$$ |       $$$$  /       $$$$$$$$ |$$ |  $$ |$$  __$$ 
+$$ |       $$  $$<        $$  __$$ |$$ |  $$ |$$ |  $$ |
+$$ |  $$ $$  /$$       $$ |  $$ |$$ |  $$ |$$ |  $$ |
+$$$$$$  |$$ /  $$ |      $$ |  $$ |$$$$$$  |$$$$$$$  |
+ ______/ __|  __|      __|  __| ______/ _______/ 
+                                               
+by @focat on rblx                                                        
+]]--
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Code1Tech/celestalx/main/cxhub.lua", true))()
+```
   
   
 ## Some scripts we offer  
