@@ -1,3 +1,5 @@
+# CXHUB MAY NOT RECIEVE ANY MORE UPDATES.
+
 # CelestalX
 Roblox lua scripts! 
   
@@ -19,7 +21,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Code1Tech/celestalx/m
   
   
 ## Some scripts we offer  
-We have a hub, with 12 scripts + a bulit in executor!  
+We have a hub, with lots of scripts and more! 
 More coming as the hub develops.  
   
   
