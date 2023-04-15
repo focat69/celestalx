@@ -27,3 +27,4 @@ More coming as the hub develops.
   
 ### TIP
 Do not use 'cxspy.lua'. It is deprecated and 'cxhub.lua' should be used instead.
+[join varity](https://discord.gg/varity)
